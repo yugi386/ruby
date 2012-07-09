@@ -2,8 +2,16 @@
 ======================================================================================
 	Método para verificar se um número é primo...
 	by Yugi
+
+Prepara a entrada numérica transformando-a em inteiro.
+
+Apresenta o Número
+
+Retorna *True* se o Numero for primo ou *false* se for composto
+
 ======================================================================================
 =end
+class Mat
 def verprimo(num)
 
 	num = num.to_i
@@ -15,42 +23,44 @@ def verprimo(num)
 	
    raiz = Math.sqrt(num)
    raiz = raiz.to_i + 1
-   erro = true
+   ret = true
 
    puts num
    
    for ct in (2..raiz)
       if (num % ct == 0 && num != ct)
-        erro = false
+        ret = false
         break
       end
    end
    
-   return erro
+   return ret
 end
-
+end
 # ---------------------------------------------------
 
-if verprimo(102756431)
+@mat = Mat.new
+
+if @mat.verprimo(102756431)
     puts "Este número é primo"
 else
     puts "Este número não é primo"
 end
 
 
-if verprimo(65537)
+if @mat.verprimo(65537)
     puts "Este número é primo"
 else
     puts "Este número não é primo"
 end
 
-if verprimo(6)
+if @mat.verprimo(6)
     puts "Este número é primo"
 else
     puts "Este número não é primo"
 end
 
-if verprimo(13)
+if @mat.verprimo(13)
     puts "Este número é primo"
 else
     puts "Este número não é primo"

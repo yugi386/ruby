@@ -1,0 +1,1 @@
+var search_data = {"index":{"searchIndex":["mat","verprimo()"],"longSearchIndex":["mat","mat#verprimo()"],"info":[["Mat","","Mat.html","","<p>\n\n<pre>Método para verificar se um número é primo...\nby Yugi</pre>\n<p>Prepara a entrada numérica transformando-a em inteiro. ...\n"],["verprimo","Mat","Mat.html#method-i-verprimo","(num)",""]]}}
